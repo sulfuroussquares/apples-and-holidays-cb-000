@@ -85,6 +85,7 @@ end #end outer loop
 end
 
 def all_holidays_with_bbq(holiday_hash)
+  bbqArray = []
   holiday_hash.each do |key, value|
     value.each do |data, attribute|
       attribute.each do |supply|
