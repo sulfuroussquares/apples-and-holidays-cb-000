@@ -88,6 +88,8 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |key, value|
     value.each do |data, attribute|
       attribute.each do |supply|
+        if (supply == "BBQ")
+        end #end if
       end # end inner inner loop
     end #end inner loop
   end #end outer loop
