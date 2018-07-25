@@ -87,6 +87,8 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |key, value|
     value.each do |data, attribute|
+      attribute.each do |supply|
+      end # end inner inner loop
     end #end inner loop
   end #end outer loop
   # return an array of holiday names (as symbols) where supply lists
