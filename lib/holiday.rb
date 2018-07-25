@@ -80,7 +80,7 @@ holiday_hash.each do |key, value|
   puts "#{key.capitalize}:"
     value.each do |data, attribute|
       #puts "  #{data.capitalize.to_s.gsub("_"," ")}: #{attribute.join(", ")}"
-      puts "#{data.to_s.split.map(&:capitalize).join(' ')}: #{attribute.flatten!}"
+      puts "#{data.to_s.split.map(&:capitalize).join(' ')}: #{attribute.join(", ")}"
     end #end inner loop
 end #end outer loop
 end
